@@ -21,6 +21,7 @@ const Mast = styled.div `
   position: relative;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 
   div {
     position: relative;
@@ -36,19 +37,29 @@ const Mast = styled.div `
   }
 
   h1 {
-    font-size: 5em;
+    font-size: 5.5em;
     z-index: 5;
     margin: 0;
     background: -webkit-linear-gradient(rgba(255,255,255, 1),rgba(255,255,255,0.2));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    letter-spacing: 0.6rem;
+  }
+
+  h3 {
+    font-size: 1.7em;
+    letter-spacing: 0.2rem;
   }
 
   img {
     position: absolute
-    top: 0;
+    margin: auto;
     height: 100%;
-    width: 100%;
+    width: 2000px;
+    overflow: hidden;
+    image-rendering: auto;
+
+    max-width: auto;
     z-index: -1;
   }
 
