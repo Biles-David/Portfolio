@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {keyframes} from 'styled-components';
 
 
 const Masthead = () => {
@@ -7,15 +8,27 @@ const Masthead = () => {
     <Mast>
       <img src='/images/masthead.jpg' alt='masthead'/>
       <div className='cover'></div>
+      <div className='fog'></div>
       <div>
-        <h1>DAVID BILES</h1>
-        <h3>Web Developer</h3>
+        <div className='masthead_text'>
+          <h1>DAVID BILES</h1>
+          <h3>Web Developer</h3>
+        </div>
       </div>
     </Mast>
   )
 }
 
 export default Masthead;
+
+const fog = keyframes`
+  0% {
+    background-position:115% 50%
+  }
+  100% {
+    background-position:-15% 50%
+  }
+`
 
 const Mast = styled.div `
   position: relative;
@@ -27,22 +40,29 @@ const Mast = styled.div `
     position: relative;
     top: -5%;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Nova Flat', cursive;
     color: #e2e2e2;
+  }
+
+  .masthead_text {
+    height: 40%;
+    width: 1000px;
+
+    background-image: linear-gradient(90deg, rgba(255,255,255,0.3), rgba(255,255,255,0.3), rgba(255,255,255, 0.8), rgba(255,255,255,0.3), rgba(255,255,255,0.3));
+    background-size: 400% 400%;
+    animation: ${fog} 10s infinite;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
   }
 
   h1 {
     font-size: 5.5em;
-    z-index: 5;
     margin: 0;
-    background: -webkit-linear-gradient(rgba(255,255,255, 1),rgba(255,255,255,0.2));
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
     letter-spacing: 0.6rem;
   }
 
@@ -52,7 +72,7 @@ const Mast = styled.div `
   }
 
   img {
-    position: absolute
+    position: absolute;
     margin: auto;
     height: 100%;
     width: 2000px;
@@ -63,12 +83,12 @@ const Mast = styled.div `
     z-index: -1;
   }
 
-  .cover {
+  .cover, .fog {
     position: absolute;
     top: 0;
     height: 100vh;
     width: 100vw;
-    background: rgba( 0, 0, 0, .5);
+    background: rgba( 0, 0, 0, .3);
     z-index: -1;
   }
 `

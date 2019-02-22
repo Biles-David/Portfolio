@@ -1,19 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Navbar from './components/Navbar';
 import Masthead from './components/Masthead';
 import About from './components/About';
-import './App.css';
+import Portfolio from './components/Portfolio';
+import Skills from './components/Skills';
 
-class App extends Component {
-  render() {
-    return (
-      <>
-        <Navbar/>
-        <Masthead/>
-        <About/>
-      </>
-    );
-  }
+const App  = () => {
+  return (
+    <>
+      <Navbar/>
+      <Masthead/>
+      <About/>
+      <Skills/>
+      <Portfolio/>
+    </>
+  );
 }
 
 export default App;
