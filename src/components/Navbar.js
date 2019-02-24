@@ -4,10 +4,7 @@ import styled from 'styled-components';
 const Navbar = () => {
   return (
     <Nav>
-      {/* <h1>
-        David Biles
-      </h1> */}
-      <div>
+      <div className='links'>
         <a href='#about'> ABOUT </a>
         <h5> PORTFOLIO </h5>
         <h5> CONTACT </h5>
@@ -24,17 +21,16 @@ const Nav = styled.div`
   width: 90vw;
   height: 7vh;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   padding: 0 5%;
   font-family: 'Varela Round', sans-serif;
   z-index: 10;
   color: #e2e2e2;
 
   a {
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    transition: all 0.2s;
+    margin: 0 5%;
+    font-size: 1em;
+    color: white;
+    text-decoration:none;
   }
 
   h1 {
@@ -42,7 +38,7 @@ const Nav = styled.div`
     font-size: 1.5em;
   }
 
-  div {
+  .links {
     display: flex;
     position: absolute;
     right: 0;

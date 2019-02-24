@@ -1,7 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
-import {keyframes} from 'styled-components';
-
+import styled, { keyframes } from 'styled-components';
 
 const Masthead = () => {
   return (
@@ -52,8 +50,7 @@ const Mast = styled.div `
   .masthead_text {
     height: 40%;
     width: 1000px;
-
-    background-image: linear-gradient(90deg, rgba(255,255,255,0.3), rgba(255,255,255,0.3), rgba(255,255,255, 0.8), rgba(255,255,255,0.3), rgba(255,255,255,0.3));
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6), rgba(0,0,0, 0.1), rgba(0,0,0,0.6), rgba(0,0,0,0.6));
     background-size: 400% 400%;
     animation: ${fog} 10s infinite;
     -webkit-text-fill-color: transparent;
@@ -78,7 +75,6 @@ const Mast = styled.div `
     width: 2000px;
     overflow: hidden;
     image-rendering: auto;
-
     max-width: auto;
     z-index: -1;
   }
@@ -88,7 +84,7 @@ const Mast = styled.div `
     top: 0;
     height: 100vh;
     width: 100vw;
-    background: rgba( 0, 0, 0, .3);
+    background: rgba( 0, 0, 0, 0);
     z-index: -1;
   }
 `

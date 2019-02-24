@@ -4,6 +4,7 @@ import Masthead from './components/Masthead';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Skills from './components/Skills';
+import Connect from './components/Connect';
 
 const App  = () => {
   return (
@@ -13,6 +14,7 @@ const App  = () => {
       <About/>
       <Skills/>
       <Portfolio/>
+      <Connect/>
     </>
   );
 }

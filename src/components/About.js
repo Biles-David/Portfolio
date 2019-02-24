@@ -7,7 +7,6 @@ const About = () => {
       <div className='about_main'>
         <div className='about_info'>
           <h1>ABOUT ME</h1>
-          <span className='bar about_bar'/>
           <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I have always had an interest in how things work, as well as puzzle solving. I have spent much of my time dissembling and rebuilding things such as computers. Web Development was a way to learn how websites operate behind the hood as well as a good way to advance my puzzle solving skills, which is what lead me into this interesting field. </p>
           <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I also enjoy spending time with my beautiful wife and son, as well as gaming with my friends. I love learning new technologies and seeing what I am able to create.</p>
         </div>
@@ -27,8 +26,8 @@ const AboutMain = styled.div`
   align-items: center;
   height: 80vh;
   width: 100vw;
-  background: rgb(25,25,25);
-  box-shadow: 0px 0px 20px 20px rgba(25,25,25, 1);
+  background: rgb(45,45,45);
+  box-shadow: 0px 0px 20px 20px rgba(45,45,45, 1);
   color: white;
   z-index: 1;
 
@@ -61,10 +60,15 @@ const AboutMain = styled.div`
     width: 60%;
 
     h1 {
+      display: flex;
+      justify-content: center;
+      border-bottom: 2px solid white;
+      width: 40%;
       font-family: 'Nova Flat', cursive;
       font-size: 2.5em;
-      margin: 0 5%;
+      padding: 1%;
       letter-spacing: 0.3rem;
+      margin-bottom: 2%;
     }
   }
 `;
