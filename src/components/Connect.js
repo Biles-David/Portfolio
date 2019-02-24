@@ -9,7 +9,7 @@ const Connect = () => {
         <a href='https://www.linkedin.com/in/david-biles/' target='blank'>
           <img src='/images/icons/linkedin-logo.png' alt='icon' />
         </a>
-        <a href='web-development-resume.pdf' download>
+        <a href='web-development-reasume.pdf' download="web-development-reasume.pdf">
           <img src='/images/icons/github.png' alt='icon' />
         </a>
       </div>
