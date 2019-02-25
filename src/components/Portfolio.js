@@ -3,20 +3,21 @@ import styled from 'styled-components';
 
 const Portfolio = () => {
   return (
-    <Port>
-      <div className='fog'></div>
+    <Port id='portfolio'>
+      <h1 className='portfolio_title'>Portfolio</h1>
       <div className='portfolio_main'>
         <div className='portfolio_back personal'>
           <div className='portfolio_info'>
-            <h1>Galaxy Routing</h1>
+            <div className='title'>
+              <h1>Galaxy Routing</h1>
+              <div>
+                <span> Visit live site </span>
+                <a href='http://galaxyrouting.com' target='blank'>here</a>
+              </div>
+            </div>
+            <p>React | Google Maps API | Google Directions Services | Firebase Storage | Node</p>
             <p> An app for small businesses with drivers to easily and simply manage display routes </p>
-            <ul>
-              <li>A personal project created during my time at DevMountain</li>
-              <li>Utilized Google Maps API and Directions Services to render live data for admins to create routes. This feature allows for drag and drop rearranging and additions to the route list side that sends the info to the Google API to render the appropriate information</li>
-              <li>Intentionally designed user interface for simplicity to require little to no training to use</li>
-              <li>Built in capabilities for admins to see which step a user is on in real-time</li>
-              <li>Self-taught Firebase storage to import personal photos linked to their user profile</li>
-            </ul>
+            <p>A personal project created during my time at DevMountain Galaxy Routing utilizes Google Maps API and Directions services to render live data for admins to create routes for their user interface which is designed for simplicity to require little to no training to use.</p>
           </div>
           <span className='border' />
           <img src='/images/galaxy-routing-login.png' alt='galaxy-routing' />
@@ -25,14 +26,16 @@ const Portfolio = () => {
           <img src='/images/request-page-4.png' alt='all.4.g' />
           <span className='border' />
           <div className='portfolio_info'>
-            <h1> ALL.4.G.</h1>
+            <div className='title'>
+              <h1> ALL.4.G.</h1>
+              <div>
+                <span>Visit live site</span>
+                <a href='http://localhost:3000'>here</a>
+              </div>
+            </div>
+            <p>React Hooks | Socket.io | Material ui | Node</p>
             <p>A web application for gamers to find or organize gaming groups around specific games</p>
-            <ul>
-              <li>A group project with two other individuals created during my time at DevMountain</li>
-              <li>Primarily responsible for buildout of chat capabilities, which were built using Socket.io </li>
-              <li>Developed functionality to display all active users in gaming groups</li>
-              <li>Self-taught Material UI and Styled Components to create seamless design</li>
-            </ul>
+            <p>A group project with two other individuals created during my time at DevMountain ALL.4.G. Utilizes Socket.io to create instant visibility of players who have joined game groups, as well as create a chat feature within each group. Material UI and Styled Components to create seamless design</p>
           </div>
         </div>
       </div>
@@ -45,7 +48,8 @@ export default Portfolio;
 const Port = styled.div`
   position: relative;
   display: flex;
-  padding: 4%;
+  flex-direction: column;
+  padding: 6% 4%;
   justify-content: center;
   align-items: center;
   height: auto;
@@ -55,13 +59,26 @@ const Port = styled.div`
   -o-background-size: cover;
   background-size: cover;
 
+  .portfolio_title {
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid white;
+    width: 15%;
+    font-family: 'Nova Flat', cursive;
+    font-size: 2.5em;
+    letter-spacing: 0.3rem;
+    padding: 1%;
+    margin: 2% 5%;
+  }
+
   .portfolio_back {
     padding: 2%;
     margin: 2%;
     display: flex;
     align-items: center;
     height: 42vh;
-    background: rgba( 250, 250, 250, 0.9);
+    background: rgba( 230, 230, 230, 0.9);
     border: 2px solid black;
     border-radius: 5px;
 
@@ -83,6 +100,20 @@ const Port = styled.div`
     }
   }
 
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      font-weight: bold;
+      cursor: pointer;
+      color: rgb(97, 218, 251);
+      margin: 5px;
+      text-decoration: none;
+    }
+  }
+
   .personal {
     justify-content: flex-end;
   } 
@@ -91,18 +122,11 @@ const Port = styled.div`
     justify-content: flex-start;
   }
 
-  .fog {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba( 0, 0, 0, 0.2);
-  }
-
   .portfolio_main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 90%;
+    z-index: 0;
   }
 `

@@ -6,15 +6,15 @@ import Portfolio from './components/Portfolio';
 import Skills from './components/Skills';
 import Connect from './components/Connect';
 
-const App  = () => {
+const App = () => {
   return (
     <>
       <Navbar/>
-      <Masthead/>
-      <About/>
-      <Skills/>
-      <Portfolio/>
-      <Connect/>
+      <Masthead />
+      <About />
+      <Skills />
+      <Portfolio />
+      <Connect />
     </>
   );
 }

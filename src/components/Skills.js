@@ -9,6 +9,14 @@ const Skills = () => {
         <div className='skills_container'>
           <div className='skills'>
             <div className='icon_name'>
+              <p>ES6+</p>
+            </div>
+            <a href='https://es6.io' target='blank'>
+              <img src='/images/icons/devIcons-03.svg' alt='skill logo'/>
+            </a>
+          </div>
+          <div className='skills'>
+            <div className='icon_name'>
               <p>React</p>
             </div>
             <a href='https://reactjs.org' target='blank'>
@@ -37,14 +45,6 @@ const Skills = () => {
             </div>
             <a href='https://nodejs.org/en' target='blank'>
               <img src='/images/icons/devIcons-09.svg' alt='skill logo'/>
-            </a>
-          </div>
-          <div className='skills'>
-            <div className='icon_name'>
-              <p>ES6+</p>
-            </div>
-            <a href='https://es6.io' target='blank'>
-              <img src='/images/icons/devIcons-03.svg' alt='skill logo'/>
             </a>
           </div>
           <div className='skills'>
@@ -101,6 +101,22 @@ const Skills = () => {
             </div>
             <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3' target='blank'>
               <img src='/images/icons/devIcons-13.svg' alt='skill logo'/>
+            </a>
+          </div>
+          <div className='skills'>
+            <div className='icon_name'>
+              <p>Styled components</p>
+            </div>
+            <a href='https://www.styled-components.com/' target='blank'>
+              <img className='styled_components' src='/images/icons/devIcons-16.png' alt='skill logo'/>
+            </a>
+          </div>
+          <div className='skills'>
+            <div className='icon_name'>
+              <p>Material UI</p>
+            </div>
+            <a href='https://material-ui.com/' target='blank'>
+              <img className='material_ui' src='/images/icons/material-ui.png' alt='skill logo'/>
             </a>
           </div>
         </div>
@@ -187,6 +203,18 @@ const Tech = styled.div`
     font-size: 1.2em;
   }
   
+  .material_ui {
+    height: 120px;
+    width: auto;
+    margin: 12px;
+  }
+
+  .styled_components {
+    height: 120px;
+    width: 120px;
+    border: 1px solid white;
+  }
+
   .skills:hover {
     
     img {

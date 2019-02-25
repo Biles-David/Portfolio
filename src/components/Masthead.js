@@ -3,7 +3,7 @@ import styled, { keyframes } from 'styled-components';
 
 const Masthead = () => {
   return (
-    <Mast>
+    <Mast id='home'>
       <img src='/images/masthead.jpg' alt='masthead'/>
       <div className='cover'></div>
       <div className='fog'></div>

@@ -1,14 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
+import pdf from '../web-development-resume.pdf';
 
 const About = () => {
   return (
-    <AboutMain id='about'>
+    <AboutMain id='about' >
       <div className='about_main'>
         <div className='about_info'>
           <h1>ABOUT ME</h1>
-          <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I have always had an interest in how things work, as well as puzzle solving. I have spent much of my time dissembling and rebuilding things such as computers. Web Development was a way to learn how websites operate behind the hood as well as a good way to advance my puzzle solving skills, which is what lead me into this interesting field. </p>
-          <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I also enjoy spending time with my beautiful wife and son, as well as gaming with my friends. I love learning new technologies and seeing what I am able to create.</p>
+          <p> I have always had an interest in how things work, puzzle solving, and design. I have spent much of my time dissembling and rebuilding things such as computers. Web Development is a way to learn how websites operate behind the hood. Prior to my time at DevMountain I worked as a Security officer and an online Reseller where in both positions I was placed in a higher management position. </p>
+          <p> I enjoy spending time with my beautiful wife and son, as well as gaming with my friends. I love learning new technologies and seeing what I am able to create.</p>
+          <div className='about_resume'>
+            <p> Download resume </p>
+            <a href={pdf} download>here</a>
+          </div>
         </div>
         <img src='/images/profile.jpg' alt='profile'/>
       </div>
@@ -31,6 +36,19 @@ const AboutMain = styled.div`
   color: white;
   z-index: 1;
 
+  .about_resume {
+    display: flex;
+    align-items: center;
+
+    a {
+      font-weight: bold;
+      cursor: pointer;
+      color: rgb(97, 218, 251);
+      margin: 5px;
+      text-decoration: none;
+    }
+  }
+  
   .bar {
     margin: 20px;
     border: 0.5px solid white;
