@@ -108,7 +108,7 @@ const Port = styled.div`
     a {
       font-weight: bold;
       cursor: pointer;
-      color: rgb(97, 218, 251);
+      color: rgb(209, 59, 59);
       margin: 5px;
       text-decoration: none;
     }

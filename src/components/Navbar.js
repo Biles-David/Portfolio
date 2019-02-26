@@ -62,7 +62,6 @@ const Nav = styled.div`
   display: flex;
   padding: 0 5%;
   font-family: 'Varela Round', sans-serif;
-  /* font-family: 'Nova Flat', cursive; */
   z-index: 10;
   color: #e2e2e2;
   animation: ${fadeIn} 0.2s linear;

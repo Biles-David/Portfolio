@@ -77,7 +77,7 @@ const Con = styled.div`
     top: 0;
     height: 100%;
     width: 102%;
-    background: rgba(97, 218, 251, 0.4);
+    background: rgba(209, 59, 59, 0.4);
     border-radius: 5px;
   }
 
