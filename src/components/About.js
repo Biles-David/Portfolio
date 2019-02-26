@@ -82,7 +82,7 @@ const AboutMain = styled.div`
       display: flex;
       justify-content: center;
       border-bottom: 2px solid white;
-      width: 40%;
+      width: 50%;
       font-family: 'Nova Flat', cursive;
       font-size: 2.5em;
       padding: 1%;
