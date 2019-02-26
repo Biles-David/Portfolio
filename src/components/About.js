@@ -15,7 +15,7 @@ const About = () => {
             <a href={pdf} download>here</a>
           </div>
         </div>
-        <img src='/images/profile.jpg' alt='profile'/>
+        <img src='https://firebasestorage.googleapis.com/v0/b/galaxy-routing.appspot.com/o/portfolio%2Fprofile-photo-shrink.jpg?alt=media&token=025af5d9-c75a-4a5b-84ec-16de8111deca' alt='profile'/>
       </div>
     </AboutMain>
   )

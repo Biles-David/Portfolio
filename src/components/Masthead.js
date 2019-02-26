@@ -4,7 +4,7 @@ import styled, { keyframes } from 'styled-components';
 const Masthead = () => {
   return (
     <Mast id='home'>
-      <img src='/images/masthead.jpg' alt='masthead'/>
+      <img src='https://firebasestorage.googleapis.com/v0/b/galaxy-routing.appspot.com/o/portfolio%2Fmasthead-shrink2.jpg?alt=media&token=b03ae54d-797c-4e29-8b35-3ebd68993f11' alt='masthead'/>
       <div className='cover'></div>
       <div className='fog'></div>
       <div>

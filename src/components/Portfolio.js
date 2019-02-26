@@ -20,17 +20,17 @@ const Portfolio = () => {
             <p>A personal project created during my time at DevMountain Galaxy Routing utilizes Google Maps API and Directions services to render live data for admins to create routes for their user interface which is designed for simplicity to require little to no training to use.</p>
           </div>
           <span className='border' />
-          <img src='/images/galaxy-routing-login.png' alt='galaxy-routing' />
+          <img src='https://firebasestorage.googleapis.com/v0/b/galaxy-routing.appspot.com/o/portfolio%2Fgalaxy-routing-login-shrink.jpg?alt=media&token=8a4720c0-8c99-4f8d-b507-0ad1a51c4426' alt='galaxy-routing' />
         </div>
         <div className='portfolio_back group'>
-          <img src='/images/request-page-4.png' alt='all.4.g' />
+          <img src='https://firebasestorage.googleapis.com/v0/b/galaxy-routing.appspot.com/o/portfolio%2Frequest-page-4-shrink.jpg?alt=media&token=81633620-222d-4fa4-8941-fd5d6d664563' alt='all.4.g' />
           <span className='border' />
           <div className='portfolio_info'>
             <div className='title'>
               <h1> ALL.4.G.</h1>
               <div>
                 <span>Visit live site</span>
-                <a href='http://localhost:3000'>here</a>
+                <a href='http://localhost:3000' target='blank'>here</a>
               </div>
             </div>
             <p>React Hooks | Socket.io | Material ui | Node</p>
@@ -53,7 +53,7 @@ const Port = styled.div`
   justify-content: center;
   align-items: center;
   height: auto;
-  background: url('/images/about-background.jpg') no-repeat center center fixed;
+  background: url('https://firebasestorage.googleapis.com/v0/b/galaxy-routing.appspot.com/o/portfolio%2Fportfolio-back-shrink.jpg?alt=media&token=3be29082-8d43-4bf7-b4ce-66ece672749b') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
