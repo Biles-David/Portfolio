@@ -30,7 +30,7 @@ const Portfolio = () => {
               <h1> ALL.4.G.</h1>
               <div>
                 <span>Visit live site</span>
-                <a href='http://localhost:3000' target='blank'>here</a>
+                <a href='http://157.230.55.29:3001/' target='blank'>here</a>
               </div>
             </div>
             <p>React Hooks | Socket.io | Material ui | Node</p>
