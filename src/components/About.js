@@ -69,6 +69,7 @@ const AboutMain = styled.div`
     height: 80%;
     width: auto;
     border-radius: 5px;
+    margin-left: 6em;
   }
 
   .about_info {
