@@ -132,6 +132,7 @@ const Port = styled.div`
 
   @media (max-width: 1200px) {
     .portfolio_back {
+      padding: 20px;
       display: flex;
       flex-direction: column-reverse;
       height: auto;
@@ -152,7 +153,12 @@ const Port = styled.div`
   }
 
   @media (max-width: 650px) {
+    .title {
+      flex-direction: column;
+      padding: 10px;
+    }
     .portfolio_back {
+      padding: 15px;
       img {
         height: 150px;
         width: 250px;

@@ -90,28 +90,32 @@ const Mast = styled.div `
   @media (max-width: 750px) {
     h1 {
       font-size: 3em;
-      color: rgb(45, 45, 45)
     }
     h3 {
       font-size: 1em;
-      color: rgb(45, 45, 45)
     }
     .masthead_text {
       -webkit-text-fill-color: inherit;
+      background: rgba(45,45,45,0.4);
+      box-shadow: 0px 0px 20px 20px rgba(45,45,45, 0.4);
+      /* background: white; */
+      background-size: auto;
+      color: white;
     }
   }
   @media (max-width: 550px) {
     h1 {
       font-size: 2em;
-      color: rgb(45, 45, 45)
+      /* color: rgb(45, 45, 45) */
     }
     h3 {
       font-size: 0.5em;
-      color: rgb(45, 45, 45)
+      /* color: rgb(45, 45, 45) */
     }
 
     .masthead_text {
       -webkit-text-fill-color: inherit;
+      color: white;
     }
   }
 `
