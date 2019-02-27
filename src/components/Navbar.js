@@ -165,18 +165,20 @@ const Ham = styled.div`
   z-index: 1000;
   cursor: pointer;
   width: 100vw;
-  height: 6vh;
+  height: 7vh;
   
   .ham_back {
-    width: 100vw;
-    background: rgba(45, 45, 45, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 1%;
+    width: 98%;
     height: 6vh;
+    background: rgba(45, 45, 45, 0.9);
   }
 
   #hamburger {
     z-index: 100;
-    float: right;
-    margin: 1%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

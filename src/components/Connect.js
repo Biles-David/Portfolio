@@ -91,7 +91,7 @@ const Con = styled.div`
     display: flex;
     justify-content: center;
     border-bottom: 2px solid white;
-    width: 15%;
+    width: 200px;
     font-family: 'Nova Flat', cursive;
     font-size: 2.5em;
     letter-spacing: 0.3rem;

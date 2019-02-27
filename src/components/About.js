@@ -121,7 +121,7 @@ const AboutMain = styled.div`
     .about_info {
       h1 {
         font-size: 1.5em;
-        width: 170px;
+        width: 180px;
       }
     }
   }

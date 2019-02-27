@@ -90,17 +90,28 @@ const Mast = styled.div `
   @media (max-width: 750px) {
     h1 {
       font-size: 3em;
+      color: rgb(45, 45, 45)
     }
     h3 {
       font-size: 1em;
+      color: rgb(45, 45, 45)
+    }
+    .masthead_text {
+      -webkit-text-fill-color: inherit;
     }
   }
   @media (max-width: 550px) {
     h1 {
       font-size: 2em;
+      color: rgb(45, 45, 45)
     }
     h3 {
       font-size: 0.5em;
+      color: rgb(45, 45, 45)
+    }
+
+    .masthead_text {
+      -webkit-text-fill-color: inherit;
     }
   }
 `
