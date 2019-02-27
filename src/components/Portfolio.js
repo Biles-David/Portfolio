@@ -16,7 +16,7 @@ const Portfolio = () => {
               </div>
             </div>
             <p>React | Google Maps API | Google Directions Services | Firebase Storage | Node</p>
-            <p> An app for small businesses with drivers to easily and simply manage display routes </p>
+            <p> An app for small businesses with drivers to easily and simply manage display routes. </p>
             <p>A personal project created during my time at DevMountain Galaxy Routing utilizes Google Maps API and Directions services to render live data for admins to create routes for their user interface which is designed for simplicity to require little to no training to use.</p>
           </div>
           <span className='border' />
@@ -34,8 +34,8 @@ const Portfolio = () => {
               </div>
             </div>
             <p>React Hooks | Socket.io | Material ui | Node</p>
-            <p>A web application for gamers to find or organize gaming groups around specific games</p>
-            <p>A group project with two other individuals created during my time at DevMountain ALL.4.G. Utilizes Socket.io to create instant visibility of players who have joined game groups, as well as create a chat feature within each group. Material UI and Styled Components to create seamless design</p>
+            <p>A web application for gamers to find or organize gaming groups around specific games.</p>
+            <p>A group project with two other individuals created during my time at DevMountain ALL.4.G. Utilizes Socket.io to create instant visibility of players who have joined game groups, as well as create a chat feature within each group. Material UI and Styled Components to create seamless design.</p>
           </div>
         </div>
       </div>
