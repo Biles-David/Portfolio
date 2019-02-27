@@ -87,4 +87,20 @@ const Mast = styled.div `
     background: rgba( 0, 0, 0, 0);
     z-index: -1;
   }
+  @media (max-width: 750px) {
+    h1 {
+      font-size: 3em;
+    }
+    h3 {
+      font-size: 1em;
+    }
+  }
+  @media (max-width: 550px) {
+    h1 {
+      font-size: 2em;
+    }
+    h3 {
+      font-size: 0.5em;
+    }
+  }
 `

@@ -129,4 +129,34 @@ const Port = styled.div`
     width: 90%;
     z-index: 0;
   }
+
+  @media (max-width: 1200px) {
+    .portfolio_back {
+      display: flex;
+      flex-direction: column-reverse;
+      height: auto;
+      align-items: center;
+
+      img {
+        height: 350px;
+        width: 450px;
+      }
+
+      .border {
+        display: none;
+      }
+    }
+    .group {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .portfolio_back {
+      img {
+        height: 150px;
+        width: 250px;
+      }
+    }
+  }
 `

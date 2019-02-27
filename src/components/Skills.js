@@ -161,14 +161,14 @@ const Tech = styled.div`
 
   h1 {
     display: flex;
-      justify-content: center;
-      border-bottom: 2px solid white;
-      width: 55%;
-      font-family: 'Nova Flat', cursive;
-      font-size: 2.5em;
-      letter-spacing: 0.3rem;
-      margin-bottom: 2%;
-      padding: 1%;
+    justify-content: center;
+    border-bottom: 2px solid white;
+    width: 600px;
+    font-family: 'Nova Flat', cursive;
+    font-size: 2.5em;
+    letter-spacing: 0.3rem;
+    margin-bottom: 2%;
+    padding: 1%;
   }
 
   .tech_bar {
@@ -232,5 +232,35 @@ const Tech = styled.div`
   img {
     height: auto;
     width: 10em;
+  }
+  @media (max-width: 750px) {
+    h1 {
+      width: 450px;
+      text-align: center;
+    }
+    .tech_info {
+      align-items: center;
+    }
+    .skills_container {
+      justify-content: center;
+    }
+    img {
+      height: 100px;
+      width: 100px;
+    }
+    .styled_components {
+      height: 90px;
+      width: 90px;
+    }
+    .material_ui {
+      height: 90px;
+      width: 100px;
+    }
+  }
+  @media (max-width: 600px) {
+    h1 {
+      width: 300px;
+      font-size: 1.5em;
+    }
   }
 `;

@@ -37,11 +37,12 @@ const Con = styled.div`
   background: rgb(45,45,45);
   box-shadow: 0px 0px 20px 20px rgba(45,45,45, 1);
   height: 35vh;
+  padding: 30px;
 
   .social_media {
     display: flex;
     justify-content: center;
-    width: 40%;
+    width: 300px;
 
     a {
       position: relative;
@@ -60,7 +61,7 @@ const Con = styled.div`
 
     img {
       height: 42px;
-      width: auto;
+      width: 42px;
     }
   }
 

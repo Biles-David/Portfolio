@@ -4,6 +4,7 @@ import styled, { keyframes } from 'styled-components';
 const Navbar = () => {
 
   const [scroll, updateScroll] = useState(0);
+  const [menu, updateMenu] = useState(false);
 
   const setDimensions = () => {
     updateScroll(window.scrollY)
@@ -20,25 +21,60 @@ const Navbar = () => {
       .scrollIntoView({block: 'start', behavior: 'smooth'})
   }
 
+  const handleMenu = () => {
+    updateMenu(!menu)
+  }
+
   if (scroll <= 2) {
     return (
-      <div />
+      <Ham onClick={handleMenu}>
+      <div className='ham_back'>
+        <div id='hamburger' className={ menu ? 'open' : null }>
+          <span className='bar one'/>
+          <span className='bar two'/>
+          <span className='bar three'/>
+        </div>
+      </div>
+      <div id='drop' className={ menu ? 'open' : null }>
+        <div onClick={ () => handleClick('home')}> TOP </div>
+        <div onClick={ () => handleClick('about')}> ABOUT </div>
+        <div onClick={ () => handleClick('portfolio')}> PORTFOLIO </div>
+        <div onClick={ () => handleClick('connect')}> CONTACT </div>
+      </div>
+    </Ham>
     )
   }
 
   return (
-    <Nav>
-      <div className='design_border'>
-      <div className='design'>
-        <div className='links'>
+    <>
+      <Nav>
+        <div className='design_border'>
+        <div className='design'>
+          <div className='links'>
+            <div onClick={ () => handleClick('home')}> TOP </div>
+            <div onClick={ () => handleClick('about')}> ABOUT </div>
+            <div onClick={ () => handleClick('portfolio')}> PORTFOLIO </div>
+            <div onClick={ () => handleClick('connect')}> CONTACT </div>
+          </div>
+        </div>
+        </div>
+      </Nav>
+      <Ham onClick={handleMenu}>
+        <div className='ham_back'>
+          <div id='hamburger' className={ menu ? 'open' : null }>
+            <span className='bar one'/>
+            <span className='bar two'/>
+            <span className='bar three'/>
+          </div>
+        </div>
+        <div id='drop' className={ menu ? 'open' : null }>
           <div onClick={ () => handleClick('home')}> TOP </div>
           <div onClick={ () => handleClick('about')}> ABOUT </div>
           <div onClick={ () => handleClick('portfolio')}> PORTFOLIO </div>
           <div onClick={ () => handleClick('connect')}> CONTACT </div>
         </div>
-      </div>
-      </div>
-    </Nav>
+      </Ham>
+    </>
   )
 }
 
@@ -54,7 +90,7 @@ const fadeIn = keyframes`
 `
 
 const Nav = styled.div`
-  display: none;
+
   position: fixed;
   top: 0;
   width: 90vw;
@@ -115,5 +151,96 @@ const Nav = styled.div`
       color: rgb(97, 218, 251);
       border-bottom: 2px solid rgb(97, 218, 251);
     }
+  }
+
+  @media (max-width: 800px) {
+    display: none;
+  }
+`
+
+const Ham = styled.div`
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  cursor: pointer;
+  width: 100vw;
+  height: 6vh;
+  
+  .ham_back {
+    width: 100vw;
+    background: rgba(45, 45, 45, 0.9);
+    height: 6vh;
+  }
+
+  #hamburger {
+    z-index: 100;
+    float: right;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30px;
+    width: 40px;
+    border: 2px solid white;
+    border-radius: 5px;
+    
+    .bar {
+      transition: all 0.5s ease-in-out;
+      width: 60%;
+      height: 2px;
+      background: white;
+    }
+
+  }
+  #hamburger.open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #hamburger.open span:nth-child(1){
+    transform: rotate(45deg);
+    transform-origin: 40%;
+  }
+  #hamburger.open span:nth-child(2){
+    opacity: 0;
+  }
+  #hamburger.open span:nth-child(3){
+    transform: rotate(-45deg);
+    transform-origin: 40%;
+  }
+
+  #drop {
+    position: absolute;
+    display: flex;
+    top: 6vh;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 96vw;
+    height: auto;
+    padding: 2%;
+    background: rgba(45, 45, 45, 0.9);
+    transform: translateY(-200px);
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+    color: white;
+
+    
+    div {
+      margin: 0.5% 0;
+    }
+  }
+
+  #drop.open {
+    transform: translateY(0);
+    
+    div {
+      margin: 0.5% 0;
+    }
+  }
+
+  @media (max-width: 800px) {
+    display: block;
   }
 `

@@ -82,12 +82,47 @@ const AboutMain = styled.div`
       display: flex;
       justify-content: center;
       border-bottom: 2px solid white;
-      width: 50%;
+      width: 260px;
+      height: auto;
       font-family: 'Nova Flat', cursive;
       font-size: 2.5em;
       padding: 1%;
       letter-spacing: 0.3rem;
       margin-bottom: 2%;
+    }
+  }
+  @media (max-width: 1200px) {
+    height: auto;
+
+    .about_main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column-reverse;
+      height: auto;
+      margin: 5%;
+    }
+    .about_info {
+      height: auto;
+    }
+
+    img {
+      margin: 0 auto;
+      height: 400px;
+      width: 600px;
+    }
+  }
+  @media (max-width: 750px) {
+    img {
+      height: 200px;
+      width: 300px;
+    }
+
+    .about_info {
+      h1 {
+        font-size: 1.5em;
+        width: 170px;
+      }
     }
   }
 `;
