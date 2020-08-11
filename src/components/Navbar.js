@@ -18,7 +18,7 @@ const Navbar = () => {
   const handleClick = e => {
     document
       .getElementById(e)
-      .scrollIntoView({block: 'start', behavior: 'smooth'})
+      .scrollIntoView({ block: 'start', behavior: 'smooth' })
   }
 
   const handleMenu = () => {
@@ -28,20 +28,23 @@ const Navbar = () => {
   if (scroll <= 2) {
     return (
       <Ham onClick={handleMenu}>
-      <div className='ham_back'>
-        <div id='hamburger' className={ menu ? 'open' : null }>
-          <span className='bar one'/>
-          <span className='bar two'/>
-          <span className='bar three'/>
+        <div className='ham_back'>
+          <div className='ham_box'>
+            <div id='hamburger' className={menu ? 'open' : null}>
+              <span />
+              <span />
+              <span />
+              <span />
+            </div>
+          </div>
         </div>
-      </div>
-      <div id='drop' className={ menu ? 'open' : null }>
-        <div onClick={ () => handleClick('home')}> TOP </div>
-        <div onClick={ () => handleClick('about')}> ABOUT </div>
-        <div onClick={ () => handleClick('portfolio')}> PORTFOLIO </div>
-        <div onClick={ () => handleClick('connect')}> CONTACT </div>
-      </div>
-    </Ham>
+        <div id='drop' className={menu ? 'open' : null}>
+          <div onClick={() => handleClick('home')}> TOP </div>
+          <div onClick={() => handleClick('about')}> ABOUT </div>
+          <div onClick={() => handleClick('portfolio')}> PORTFOLIO </div>
+          <div onClick={() => handleClick('connect')}> CONTACT </div>
+        </div>
+      </Ham>
     )
   }
 
@@ -49,29 +52,32 @@ const Navbar = () => {
     <>
       <Nav>
         <div className='design_border'>
-        <div className='design'>
-          <div className='links'>
-            <div onClick={ () => handleClick('home')}> TOP </div>
-            <div onClick={ () => handleClick('about')}> ABOUT </div>
-            <div onClick={ () => handleClick('portfolio')}> PORTFOLIO </div>
-            <div onClick={ () => handleClick('connect')}> CONTACT </div>
+          <div className='design'>
+            <div className='links'>
+              <div onClick={() => handleClick('home')}> TOP </div>
+              <div onClick={() => handleClick('about')}> ABOUT </div>
+              <div onClick={() => handleClick('portfolio')}> PORTFOLIO </div>
+              <div onClick={() => handleClick('connect')}> CONTACT </div>
+            </div>
           </div>
-        </div>
         </div>
       </Nav>
       <Ham onClick={handleMenu}>
         <div className='ham_back'>
-          <div id='hamburger' className={ menu ? 'open' : null }>
-            <span className='bar one'/>
-            <span className='bar two'/>
-            <span className='bar three'/>
+          <div className='ham_box'>
+            <div id='hamburger' className={menu ? 'open' : null}>
+              <span />
+              <span />
+              <span />
+              <span />
+            </div>
           </div>
         </div>
-        <div id='drop' className={ menu ? 'open' : null }>
-          <div onClick={ () => handleClick('home')}> TOP </div>
-          <div onClick={ () => handleClick('about')}> ABOUT </div>
-          <div onClick={ () => handleClick('portfolio')}> PORTFOLIO </div>
-          <div onClick={ () => handleClick('connect')}> CONTACT </div>
+        <div id='drop' className={menu ? 'open' : null}>
+          <div onClick={() => handleClick('home')}> TOP </div>
+          <div onClick={() => handleClick('about')}> ABOUT </div>
+          <div onClick={() => handleClick('portfolio')}> PORTFOLIO </div>
+          <div onClick={() => handleClick('connect')}> CONTACT </div>
         </div>
       </Ham>
     </>
@@ -166,51 +172,85 @@ const Ham = styled.div`
   cursor: pointer;
   width: 100vw;
   height: 7vh;
-  
+
   .ham_back {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding: 0 1%;
     width: 98%;
     height: 6vh;
-    background: rgba(45, 45, 45, 0.9);
+    background: rgba(65, 65, 65);
   }
 
-  #hamburger {
-    z-index: 100;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 30px;
-    width: 40px;
-    border: 2px solid white;
+  .ham_box {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    height: 5vh;
+    width: 3em;
+  }
+
+  #hamburger span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 90%;
+    background: white;
     border-radius: 5px;
-    
-    .bar {
-      transition: all 0.5s ease-in-out;
-      width: 60%;
-      height: 2px;
-      background: white;
-    }
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
 
+  #hamburger span:nth-child(1) {
+    top: 10%;
   }
-  #hamburger.open {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+  #hamburger span:nth-child(2),#hamburger span:nth-child(3) {
+    /* top: 13px; */
+    top: 50%;
   }
-  #hamburger.open span:nth-child(1){
+
+  #hamburger span:nth-child(4) {
+    /* top: 31px; */
+    top: 85%;
+  }
+
+  #hamburger.open span:nth-child(1) {
+    /* top: 13px; */
+    top: 50%;
+    width: 0%;
+    left: 50%;
+  }
+
+  #hamburger.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
     transform: rotate(45deg);
-    transform-origin: 40%;
   }
-  #hamburger.open span:nth-child(2){
-    opacity: 0;
-  }
-  #hamburger.open span:nth-child(3){
+
+  #hamburger.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    transform-origin: 40%;
+  }
+
+  #hamburger.open span:nth-child(4) {
+    /* top: 18px; */
+    top: 50%;
+    width: 0%;
+    left: 50%;
   }
 
   #drop {

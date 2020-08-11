@@ -2,7 +2,7 @@ import React from 'react'
 import styled, { keyframes } from 'styled-components';
 
 const Skills = () => {
-  return ( 
+  return (
     <Tech>
       <div className='tech_info'>
         <h1> TECHNOLOGIES & SKILLS </h1>
@@ -12,7 +12,7 @@ const Skills = () => {
               <p>ES6+</p>
             </div>
             <a href='https://es6.io' target='blank'>
-              <img src='/images/icons/devIcons-03.svg' alt='skill logo'/>
+              <img src='/images/icons/devIcons-03.svg' alt='skill logo' />
             </a>
           </div>
           <div className='skills'>
@@ -20,7 +20,7 @@ const Skills = () => {
               <p>React</p>
             </div>
             <a href='https://reactjs.org' target='blank'>
-              <img src='/images/icons/devIcons-01.svg' alt='skill logo'/>
+              <img src='/images/icons/devIcons-01.svg' alt='skill logo' />
             </a>
           </div>
           <div className='skills'>
@@ -28,7 +28,7 @@ const Skills = () => {
               <p>Express</p>
             </div>
             <a href='https://expressjs.com' target='blank'>
-              <img src='/images/icons/devIcons-04.svg' alt='skill logo'/>
+              <img src='/images/icons/devIcons-04.svg' alt='skill logo' />
             </a>
           </div>
           <div className='skills'>
@@ -36,7 +36,7 @@ const Skills = () => {
               <p>PostgresSQL</p>
             </div>
             <a href='https://www.postgresql.org' target='blank'>
-              <img src='/images/icons/devIcons-08.svg' alt='skill logo'/>
+              <img src='/images/icons/devIcons-08.svg' alt='skill logo' />
             </a>
           </div>
           <div className='skills'>
@@ -44,7 +44,7 @@ const Skills = () => {
               <p>Node.js</p>
             </div>
             <a href='https://nodejs.org/en' target='blank'>
-              <img src='/images/icons/devIcons-09.svg' alt='skill logo'/>
+              <img src='/images/icons/devIcons-09.svg' alt='skill logo' />
             </a>
           </div>
           <div className='skills'>
@@ -52,7 +52,7 @@ const Skills = () => {
               <p>NPM</p>
             </div>
             <a href='https://www.npmjs.com' target='blank'>
-              <img src='/images/icons/devIcons-10.svg' alt='skill logo'/>
+              <img src='/images/icons/devIcons-10.svg' alt='skill logo' />
             </a>
           </div>
           <div className='skills'>
@@ -60,7 +60,7 @@ const Skills = () => {
               <p>Vue.js</p>
             </div>
             <a href='https://vuejs.org' target='blank'>
-              <img src='/images/icons/devIcons-05.svg' alt='skill logo'/>
+              <img src='/images/icons/devIcons-05.svg' alt='skill logo' />
             </a>
           </div>
           <div className='skills'>
@@ -68,7 +68,7 @@ const Skills = () => {
               <p>Git + GitHub</p>
             </div>
             <a href='https://git-scm.com' target='blank'>
-              <img src='/images/icons/devIcons-06.svg' alt='skill logo'/>
+              <img src='/images/icons/devIcons-06.svg' alt='skill logo' />
             </a>
           </div>
           <div className='skills'>
@@ -76,7 +76,7 @@ const Skills = () => {
               <p>Redux</p>
             </div>
             <a href='https://redux.js.org' target='blank'>
-              <img src='/images/icons/devIcons-14.svg' alt='skill logo'/>
+              <img src='/images/icons/devIcons-14.svg' alt='skill logo' />
             </a>
           </div>
           <div className='skills'>
@@ -84,7 +84,7 @@ const Skills = () => {
               <p>Socket.io</p>
             </div>
             <a href='https://socket.io' target='blank'>
-              <img src='/images/icons/devIcons-07.svg' alt='skill logo'/>
+              <img src='/images/icons/devIcons-07.svg' alt='skill logo' />
             </a>
           </div>
           <div className='skills'>
@@ -92,7 +92,7 @@ const Skills = () => {
               <p>HTML5</p>
             </div>
             <a href='https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5' target='blank'>
-              <img src='/images/icons/devIcons-15.svg' alt='skill logo'/>
+              <img src='/images/icons/devIcons-15.svg' alt='skill logo' />
             </a>
           </div>
           <div className='skills'>
@@ -100,7 +100,7 @@ const Skills = () => {
               <p>CSS3</p>
             </div>
             <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3' target='blank'>
-              <img src='/images/icons/devIcons-13.svg' alt='skill logo'/>
+              <img src='/images/icons/devIcons-13.svg' alt='skill logo' />
             </a>
           </div>
           <div className='skills'>
@@ -108,7 +108,7 @@ const Skills = () => {
               <p>Styled components</p>
             </div>
             <a href='https://www.styled-components.com/' target='blank'>
-              <img className='styled_components' src='/images/icons/devIcons-16.png' alt='skill logo'/>
+              <img className='styled_components' src='/images/icons/devIcons-16.png' alt='skill logo' />
             </a>
           </div>
           <div className='skills'>
@@ -116,7 +116,31 @@ const Skills = () => {
               <p>Material UI</p>
             </div>
             <a href='https://material-ui.com/' target='blank'>
-              <img className='material_ui' src='/images/icons/material-ui.png' alt='skill logo'/>
+              <img className='material_ui' src='/images/icons/material-ui.png' alt='skill logo' />
+            </a>
+          </div>
+          <div className='skills'>
+            <div className='icon_name'>
+              <p>Java</p>
+            </div>
+            <a href='https://docs.oracle.com/javase/8/docs/' target='blank'>
+              <img className='java' src='/images/icons/java.png' alt='skill logo' />
+            </a>
+          </div>
+          <div className='skills'>
+            <div className='icon_name'>
+              <p>Oracle</p>
+            </div>
+            <a href='https://docs.oracle.com/en/' target='blank'>
+              <img className='oracle' src='/images/icons/oracle.png' alt='skill logo' />
+            </a>
+          </div>
+          <div className='skills'>
+            <div className='icon_name'>
+              <p>Selenium</p>
+            </div>
+            <a href='https://www.javadoc.io/doc/org.seleniumhq.selenium/selenium-api/2.50.1/org/openqa/selenium/WebDriver.html' target='blank'>
+              <img className='selenium' src='/images/icons/selenium.png' alt='skill logo' />
             </a>
           </div>
         </div>
@@ -190,6 +214,8 @@ const Tech = styled.div`
     align-items: center;
     justify-content: center;
     margin: 10px;
+    height: 10em;
+    width: 10em;
   }
 
   .icon_name {
@@ -203,6 +229,11 @@ const Tech = styled.div`
     font-size: 1.2em;
   }
   
+  .java, .selenium {
+    height: 9em;
+    width: 9em;
+  }
+
   .material_ui {
     height: 120px;
     width: auto;

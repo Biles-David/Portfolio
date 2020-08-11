@@ -6,13 +6,31 @@ const Portfolio = () => {
     <Port id='portfolio'>
       <h1 className='portfolio_title'>Portfolio</h1>
       <div className='portfolio_main'>
+        <div className='portfolio_back group'>
+          <div className='attBorder'>
+            <img className='attLogo' src='../../images/icons/attlogo.jpg' alt='AT&T' />
+          </div>
+          <span className='border' />
+          <div className='portfolio_info'>
+            <div className='title'>
+              <h1>AT&T EIS Project</h1>
+              {/* <div>
+                <span> Visit GitHub Repo </span>
+                <a href='https://github.com/Biles-David/Galaxy-Routing' target='blank'>here</a>
+              </div> */}
+            </div>
+            <p>Java | Oracle | Stored Procedures | Selenium | JUnit</p>
+            <p> An application built for AT&T to Manage, Track, and Aid government ordering of their product  </p>
+            {/* <p>A personal project created during my time at DevMountain Galaxy Routing utilizes Google Maps API and Directions services to render live data for admins to create routes for their user interface which is designed for simplicity to require little to no training to use.</p> */}
+          </div>
+        </div>
         <div className='portfolio_back personal'>
           <div className='portfolio_info'>
             <div className='title'>
               <h1>Galaxy Routing</h1>
               <div>
-                <span> Visit live site </span>
-                <a href='http://galaxyrouting.com' target='blank'>here</a>
+                <span> Visit GitHub Repo </span>
+                <a href='https://github.com/Biles-David/Galaxy-Routing' target='blank'>here</a>
               </div>
             </div>
             <p>React | Google Maps API | Google Directions Services | Firebase Storage | Node</p>
@@ -29,8 +47,8 @@ const Portfolio = () => {
             <div className='title'>
               <h1> ALL.4.G.</h1>
               <div>
-                <span>Visit live site</span>
-                <a href='http://157.230.55.29:3001/' target='blank'>here</a>
+                <span>Visit GitHub Repo</span>
+                <a href='https://github.com/gamers-unite/All-4-G' target='blank'>here</a>
               </div>
             </div>
             <p>React Hooks | Socket.io | Material ui | Node</p>
@@ -87,10 +105,15 @@ const Port = styled.div`
       flex-direction: column;
     }
 
-    img {
+    img, .attBorder {
       height: 100%;
       width: 48.7%;
       border-radius: 5px;
+    }
+
+    .attLogo {
+      height: 80%;
+      width: 90%;
     }
 
     .border {
@@ -130,6 +153,13 @@ const Port = styled.div`
     z-index: 0;
   }
 
+  .attBorder {
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   @media (max-width: 1200px) {
     .portfolio_back {
       padding: 20px;
@@ -138,7 +168,7 @@ const Port = styled.div`
       height: auto;
       align-items: center;
 
-      img {
+      img, .attborder{
         height: 350px;
         width: 450px;
       }
@@ -159,7 +189,7 @@ const Port = styled.div`
     }
     .portfolio_back {
       padding: 15px;
-      img {
+      img, .attBorder  {
         height: 150px;
         width: 250px;
       }
