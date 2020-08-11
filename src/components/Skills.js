@@ -143,6 +143,14 @@ const Skills = () => {
               <img className='selenium' src='/images/icons/selenium.png' alt='skill logo' />
             </a>
           </div>
+          <div className='skills'>
+            <div className='icon_name'>
+              <p>Docker</p>
+            </div>
+            <a href='https://docs.docker.com/engine/reference/builder/' target='blank'>
+              <img className='docker' src='/images/icons/docker.png' alt='skill logo' />
+            </a>
+          </div>
         </div>
       </div>
     </Tech>
@@ -232,6 +240,11 @@ const Tech = styled.div`
   .java, .selenium {
     height: 9em;
     width: 9em;
+  }
+
+  .docker {
+    height: 11em;
+    width: 12em;
   }
 
   .material_ui {
