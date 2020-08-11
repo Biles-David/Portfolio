@@ -4,26 +4,8 @@ import styled from 'styled-components';
 const Portfolio = () => {
   return (
     <Port id='portfolio'>
-      <h1 className='portfolio_title'>Portfolio</h1>
+      <h1 className='portfolio_title'>Personal Portfolio</h1>
       <div className='portfolio_main'>
-        <div className='portfolio_back group'>
-          <div className='attBorder'>
-            <img className='attLogo' src='../../images/icons/attlogo.jpg' alt='AT&T' />
-          </div>
-          <span className='border' />
-          <div className='portfolio_info'>
-            <div className='title'>
-              <h1>AT&T EIS Project</h1>
-              {/* <div>
-                <span> Visit GitHub Repo </span>
-                <a href='https://github.com/Biles-David/Galaxy-Routing' target='blank'>here</a>
-              </div> */}
-            </div>
-            <p>Java | Oracle | Stored Procedures | Selenium | JUnit</p>
-            <p> An application built for AT&T to Manage, Track, and Aid government ordering of their product  </p>
-            {/* <p>A personal project created during my time at DevMountain Galaxy Routing utilizes Google Maps API and Directions services to render live data for admins to create routes for their user interface which is designed for simplicity to require little to no training to use.</p> */}
-          </div>
-        </div>
         <div className='portfolio_back personal'>
           <div className='portfolio_info'>
             <div className='title'>
@@ -82,7 +64,7 @@ const Port = styled.div`
     display: flex;
     justify-content: center;
     border-bottom: 2px solid white;
-    width: 205px;
+    width: 35%;
     font-family: 'Nova Flat', cursive;
     font-size: 2.5em;
     letter-spacing: 0.3rem;

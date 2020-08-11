@@ -8,8 +8,9 @@ const About = () => {
       <div className='about_main'>
         <div className='about_info'>
           <h1>ABOUT ME</h1>
-          <p> I have always had an interest in how things work, puzzle solving, and design. I have spent much of my time dissembling and rebuilding things such as computers. Web Development is a way to learn how websites operate behind the hood. Prior to my time at DevMountain I worked as a Security officer and an online Reseller where in both positions I was placed in a higher management position. </p>
-          <p> I enjoy spending time with my beautiful wife and son, as well as gaming with my friends. I love learning new technologies and seeing what I am able to create.</p>
+          <p> I have always had an interest in how things work, puzzle solving, and design. I have spent much of my time dissembling and rebuilding things such as computers. Web Development is a way to learn how websites operate behind the hood.
+            Throughout my time at IBM I have enjoyed learning new technologies and honing my craft as a developer. Prior to my time as a developer I worked as a Security officer and an online Reseller where in both positions I was placed in a higher management position. </p>
+          <p> I enjoy spending time with my beautiful wife and two sons, as well as gaming with my friends. Whether it be board games or video games.</p>
           <div className='about_resume'>
             <p> Download resume </p>
             <a href={pdf} download>here</a>
